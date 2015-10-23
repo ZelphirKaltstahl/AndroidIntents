@@ -3,6 +3,7 @@ package com.example.xiaolong.intents;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
@@ -24,6 +25,9 @@ public class MainActivity extends Activity {
     private Intent open_time_activity_intend;
     private Intent open_date_activity_intend;
     private Intent open_date_extended_activity_intend;
+
+    private Intent open_web_intent;
+    private Intent open_map_intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,6 +95,26 @@ public class MainActivity extends Activity {
             open_date_extended_activity_intend.putExtras(bundle);
         }
         startActivity(open_date_extended_activity_intend);
+    }
+
+    public void on_web(View view) {
+        if(open_web_intent == null) {
+            open_web_intent = new Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("https://www.duckduckgo.com")
+            );
+        }
+        startActivity(open_web_intent);
+    }
+
+    public void on_map(View view) {
+        if(open_map_intent == null) {
+            open_map_intent = new Intent(
+                    Intent.ACTION_VIEW,
+                    Uri.parse("geo:52.520007,13.404953999999975")
+            );
+        }
+        startActivity(open_map_intent);
     }
 
     @Override

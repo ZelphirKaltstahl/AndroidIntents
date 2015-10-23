@@ -13,4 +13,10 @@
     <string name="MAIN_ACTIVITY_TIME_BUTTON_TEXT">Time</string>
     <string name="MAIN_ACTIVITY_DATE_BUTTON_TEXT">Date</string>
     <string name="MAIN_ACTIVITY_DATEEXTENDED_BUTTON_TEXT">Date+</string>
+
+
+    <string name="MAIN_ACTIVITY_INTENTS_FOR_URIS_LABEL">Intents for URIs</string>
+
+    <string name="MAIN_ACTIVITY_WEB_BUTTON_TEXT">Web</string>
+    <string name="MAIN_ACTIVITY_MAP_BUTTON_TEXT">Map</string>
 </resources>

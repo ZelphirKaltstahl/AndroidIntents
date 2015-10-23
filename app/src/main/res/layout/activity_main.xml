@@ -8,32 +8,22 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TableRow
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <TextView
-            android:layout_weight=".50"
+            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/MAIN_ACTIVITY_LABEL"
-            android:id="@+id/main_activity_label" />
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </TableRow>
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+            android:id="@+id/main_activity_label"
+            android:layout_column="0"/>
 
     </TableRow>
 
@@ -42,68 +32,75 @@
         android:layout_height="match_parent">
 
         <Button
-            android:layout_weight=".50"
+            android:layout_weight=".34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:text="@string/MAIN_ACTIVITY_COLOR_BUTTON_TEXT"
             android:id="@+id/main_activity_color_button"
-            android:layout_column="0"
             android:minHeight="0dp"
 
-            android:onClick="on_color" />
+            android:onClick="on_color"
+            android:layout_column="0"/>
 
         <Button
-            android:layout_weight=".50"
+            android:layout_weight=".34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:text="@string/MAIN_ACTIVITY_ALIGNMENT_BUTTON_TEXT"
             android:id="@+id/main_activity_alignment_button"
-            android:layout_column="0"
             android:minHeight="0dp"
 
-            android:onClick="on_alignment" />
+            android:onClick="on_alignment"
+            android:layout_column="1"/>
 
         <Button
-            android:layout_weight=".50"
+            android:layout_weight=".34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:text="@string/MAIN_ACTIVITY_FONT_BUTTON_TEXT"
             android:id="@+id/main_activity_font_button"
-            android:layout_column="0"
             android:minHeight="0dp"
 
-            android:onClick="on_font" />
+            android:onClick="on_font"
+            android:layout_column="2"/>
     </TableRow>
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        >
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/MAIN_ACTIVITY_TEST_BUTTON_TEXT"
             android:id="@+id/main_activity_test_button"
-            android:layout_column="0"/>
+            android:layout_column="0"
+            android:layout_weight=".50"/>
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <TextView
-            android:layout_weight=".50"
+            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
 
             android:textAppearance="?android:attr/textAppearanceLarge"
             android:text="@string/MAIN_ACTIVITY_TIMEANDDATE_LABEL"
-            android:id="@+id/main_timeanddate_label" />
+            android:id="@+id/main_timeanddate_label"
+            android:layout_column="0"/>
 
     </TableRow>
 
-    <TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <Button
             android:layout_weight=".50"
@@ -112,10 +109,11 @@
 
             android:text="@string/MAIN_ACTIVITY_TIME_BUTTON_TEXT"
             android:id="@+id/main_activity_time_button"
-            android:layout_column="0"
             android:minHeight="0dp"
 
-            android:onClick="on_time" />
+            android:onClick="on_time"
+            android:layout_column="0"
+            android:layout_gravity="left|center_vertical"/>
 
         <Button
             android:layout_weight=".50"
@@ -124,10 +122,11 @@
 
             android:text="@string/MAIN_ACTIVITY_DATE_BUTTON_TEXT"
             android:id="@+id/main_activity_date_button"
-            android:layout_column="0"
             android:minHeight="0dp"
 
-            android:onClick="on_date" />
+            android:onClick="on_date"
+            android:layout_column="1"
+            android:layout_gravity="center"/>
 
         <Button
             android:layout_weight=".50"
@@ -135,10 +134,57 @@
             android:layout_height="wrap_content"
 
             android:text="@string/MAIN_ACTIVITY_DATEEXTENDED_BUTTON_TEXT"
+            android:minHeight="0dp"
+            android:onClick="on_date_extended"
+            android:layout_gravity="center_vertical|right"
             android:id="@+id/main_activity_date_extended_button"
-            android:layout_column="0"
+            android:layout_column="2"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_weight=".50"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/MAIN_ACTIVITY_INTENTS_FOR_URIS_LABEL"
+            android:id="@+id/main_intents_for_uris_label"
+            android:layout_column="0"/>
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_weight=".50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/MAIN_ACTIVITY_WEB_BUTTON_TEXT"
+            android:id="@+id/main_activity_web_button"
             android:minHeight="0dp"
 
-            android:onClick="on_date_extended" />
+            android:layout_column="0"
+            android:onClick="on_web"/>
+
+        <Button
+            android:layout_weight=".50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/MAIN_ACTIVITY_MAP_BUTTON_TEXT"
+            android:id="@+id/main_activity_map_button"
+            android:minHeight="0dp"
+
+            android:onClick="on_map"
+            android:layout_column="1"/>
+
     </TableRow>
 </TableLayout>
