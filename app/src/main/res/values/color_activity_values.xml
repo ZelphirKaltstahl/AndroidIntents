@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="COLOR_ACTIVITY_RED_BUTTON_TEXT">Red</string>
+    <string name="COLOR_ACTIVITY_GREEN_BUTTON_TEXT">Green</string>
+    <string name="COLOR_ACTIVITY_BLUE_BUTTON_TEXT">Blue</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.xiaolong.intents.AlignmentActivity"
+    android:columnCount="3"
+    android:rowCount="1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ALIGNMENT_ACTIVITY_LEFT_BUTTON"
+        android:id="@+id/alignment_activity_left_button"
+        android:onClick="on_left"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ALIGNMENT_ACTIVITY_CENTER_BUTTON"
+        android:id="@+id/alignment_activity_center_button"
+        android:onClick="on_center"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ALIGNMENT_ACTIVITY_RIGHT_BUTTON"
+        android:id="@+id/alignment_activity_right_button"
+        android:onClick="on_right"/>
+</GridLayout>

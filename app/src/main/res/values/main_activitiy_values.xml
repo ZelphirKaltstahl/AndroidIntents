@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MAIN_ACTIVITY_LABEL">Hello World</string>
+
+    <string name="MAIN_ACTIVITY_COLOR_BUTTON_TEXT">Color</string>
+    <string name="MAIN_ACTIVITY_ALIGNMENT_BUTTON_TEXT">Alignment</string>
+    <string name="MAIN_ACTIVITY_FONT_BUTTON_TEXT">Font</string>
+
+    <string name="MAIN_ACTIVITY_TEST_BUTTON_TEXT">Test</string>
+
+    <string name="MAIN_ACTIVITY_TIMEANDDATE_LABEL">Time and Date</string>
+
+    <string name="MAIN_ACTIVITY_TIME_BUTTON_TEXT">Time</string>
+    <string name="MAIN_ACTIVITY_DATE_BUTTON_TEXT">Date</string>
+    <string name="MAIN_ACTIVITY_DATEEXTENDED_BUTTON_TEXT">Date+</string>
+</resources>

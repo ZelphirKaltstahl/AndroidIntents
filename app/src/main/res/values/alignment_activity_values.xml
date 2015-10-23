@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ALIGNMENT_ACTIVITY_LEFT_BUTTON">Left</string>
+    <string name="ALIGNMENT_ACTIVITY_CENTER_BUTTON">Center</string>
+    <string name="ALIGNMENT_ACTIVITY_RIGHT_BUTTON">Right</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="FONT_ACTIVITY_SMALL_BUTTON_TEXT">Small</string>
+    <string name="FONT_ACTIVITY_MEDIUM_BUTTON_TEXT">Medium</string>
+    <string name="FONT_ACTIVITY_LARGE_BUTTON_TEXT">Large</string>
+</resources>
